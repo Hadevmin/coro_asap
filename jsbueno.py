@@ -11,7 +11,7 @@ class PriorityGroups:
     async def sleep(self, priority=10):
         counter = self.counter
         self.counter += 1
-        steps = .001  # granularity
+        steps = 1
         step = 0
         heappush(self.priority_queue, (priority, counter))
         try:
